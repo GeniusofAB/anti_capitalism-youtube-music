@@ -3,13 +3,13 @@ function removeAds() {
 
   adContainers.forEach(ad => {
     ad.remove();
-    showNotification("Реклама заблокирована");
+    showNotification("Реклама заблокирована/ad blocked");
   });
 
   const video = document.querySelector("video");
   if (video && video.duration > 0 && video.duration < 15) {
     video.currentTime = video.duration;
-    showNotification("Видео-реклама пропущена");
+    showNotification("Видео-реклама пропущена/Ad skiped");
   }
 }
 
