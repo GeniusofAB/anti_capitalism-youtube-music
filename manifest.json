@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Music AdBlock",
+  "version": "1.0",
+  "description": "Блокирует рекламу в YouTube Music и показывает уведомление.",
+  "permissions": [],
+  "host_permissions": ["*://music.youtube.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://music.youtube.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
