@@ -1,0 +1,15 @@
+.adblock-notice {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: #222;
+  color: #0f0;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: sans-serif;
+  z-index: 10000;
+  box-shadow: 0 0 10px rgba(0,255,0,0.6);
+  opacity: 0.9;
+  pointer-events: none;
+}
